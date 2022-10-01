@@ -1,0 +1,13 @@
+bob  = E5E5E5
+bob2 = 787878
+
+louise1 = FA71B7
+louise2 = A0B13E
+
+tina  = 97B8ED
+tina2 = 224970
+
+linda  = E93A2A 
+linda2 = EA4C40
+
+gene = FEE95A
