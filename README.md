@@ -14,5 +14,5 @@ colorscheme nopesto
 
 ## Thanks
 - [rams](https://github.com/stefanvanburen/rams.vim)
-- [pixie]http://www.nattyware.com/pixie.php()
+- [pixie](http://www.nattyware.com/pixie.php
 - [tvdb](https://thetvdb.com/)
