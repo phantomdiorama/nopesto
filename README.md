@@ -6,7 +6,7 @@ A light, minimal vim color scheme based on [rams](https://github.com/stefanvanbu
 
 ## screenshots
 
-![screenshot](screenshots.png)
+![screenshot](screenshot.png)
 
 Font in screenshots is [Comic Mono](https://dtinth.github.io/comic-mono-font/)
 
