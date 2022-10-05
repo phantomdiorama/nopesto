@@ -1,6 +1,6 @@
 ![header](header.png)
  
-A light, minimal vim color scheme based on [rams](https://github.com/stefanvanburen/rams.vim) and a palette inspired by [Bob's Burgers'](https://en.wikipedia.org/wiki/Bob%27s_Burgers).
+A light, minimal vim color scheme based inspired by [Bob's Burgers'](https://en.wikipedia.org/wiki/Bob%27s_Burgers).
 
 **Note:** This is very much a WIP
 
@@ -20,17 +20,17 @@ colorscheme nopesto
 
 ## todo
 
-- [ ] terminal support
-- [ ] group highlights for better readability/ maintainability   
+- [x] ~~terminal support~~
+- [x] ~~group highlights for better readability/ maintainability~~   
 - [ ] more Gene?
 
 ## thanks
 
-- [rams](https://github.com/stefanvanburen/rams.vim), [pencil](https://github.com/phantomdiorama/vim-colors-pencil) and [photon](https://github.com/axvr/photon.vim) for inspiration.
-- [vim-css-color](https://github.com/ap/vim-css-color)
+- [pencil](https://github.com/phantomdiorama/vim-colors-pencil) and [photon](https://github.com/axvr/photon.vim) for inspiration.
 - [tvdb](https://thetvdb.com/) for reference images.
+- [vim-css-color](https://github.com/ap/vim-css-color)
 - Loren Bouchard. Just in general.
 
 ## disclaimer
 
-nopesto is not affiliated with Bob's Burgers or the Fox network in any way
+nopesto is not affiliated with Bob's Burgers or the Fox network *in any way*
