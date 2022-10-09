@@ -1,8 +1,6 @@
 ![header](header.png)
  
-A light, super minimal vim color scheme inspired by Bob's Burgers and based on [off](https://github.com/pbrisbin/vim-colors-off)
-
-**Note:** This is very much a WIP
+A light, super minimal vim color scheme inspired by Bob's Burgers. With a focus on UI elements. Syntax, apart from comments and errors, is **uncoloured**.
 
 ## screenshots
 
@@ -19,6 +17,10 @@ colorscheme nopesto
 ## todo
 
 - [ ] more Gene?
+
+## Note
+
+Languages that use custom highlight groups, such as Markdown, may still use some colour. 
 
 ## thanks
 

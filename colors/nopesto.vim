@@ -54,7 +54,7 @@ hi ModeMsg guifg=#000000 guibg=#E5E5E5 gui=bold ctermfg=000 ctermbg=254 cterm=bo
 hi Pmenu guifg=#787878 guibg=#f2f2f2 gui=NONE ctermfg=243 ctermbg=015 cterm=NONE
 hi PmenuSel guifg=#f2f2f2 guibg=#97B8ED gui=NONE ctermfg=015 ctermbg=069 cterm=bold
 hi StatusLine guifg=#f2f2f2 guibg=#224970 gui=NONE ctermfg=015 ctermbg=006 cterm=NONE
-hi StatusLineNOS guifg=#224970 guibg=#224970 gui=NONE ctermfg=006 ctermbg=006 cterm=NONE
+hi StatusLineNC guifg=#224970 guibg=#224970 gui=NONE ctermfg=006 ctermbg=006 cterm=NONE
 hi Tabline guifg=#787878 guibg=#A0B13E gui=NONE ctermfg=243 ctermbg=106 cterm=NONE
 hi TablineSel guifg=#f2f2f2 guibg=#FA71B7 gui=NONE ctermfg=NONE ctermbg=163 cterm=NONE
 hi VertSplit guifg=#224970 guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -76,3 +76,5 @@ hi! link Underlined Normal
 hi! link Ignore Normal
 hi! link MoreMsg ModeMsg
 hi! link TablineFill Tabline
+hi! link PmenuSbar NonText
+hi! link PmenuThumb NonText
