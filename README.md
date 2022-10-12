@@ -18,9 +18,9 @@ colorscheme nopesto
 
 - [ ] more Gene?
 
-## Note
+## note
 
-Languages that use custom highlight groups, such as Markdown, may still use some colour. 
+Languages that use custom highlight groups, such as Markdown, may still use some colour. I may not fix this. 
 
 ## thanks
 
