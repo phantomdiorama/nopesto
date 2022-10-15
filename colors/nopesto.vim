@@ -1,10 +1,8 @@
 " nopesto.vim     Vim color scheme
 " author        phantomdiorama
 " webpage       https://www.github.com/phantomdiorama/nopesto
-" description   light theme with highlights colours from Bob's Burgers' palette Constant
- 
-" colors        hex         term
-" black     = #000000       000
+" description   light theme based on Bob's Burgers and Bruin.
+" 
 " off white = #f2f2f2       015
 " bob       = #E5E5E5       254
 " bob2      = #787878       243
@@ -19,61 +17,79 @@
 hi clear
 
 if exists("syntax_on")
-    syntax reset
+  syntax reset
 endif
 
-let colors_name = "nopesto"
-  
-hi Normal  guifg=#000000    guibg=#E5E5E5   gui=NONE    ctermfg=000     ctermbg=254 cterm=NONE
-hi Comment guifg=#787878    guibg=NONE      gui=italic  ctermfg=243     ctermbg=NONE cterm=italic
-hi NonText guifg=NONE       guibg=NONE      gui=NONE    ctermfg=NONE    ctermbg=NONE cterm=NONE
+let colors_name = "bruin"
 
-" Cursor
-hi ColorColumn  guifg=NONE      guibg=#f2f2f2   gui=NONE    ctermfg=NONE    ctermbg=015 cterm=NONE
-hi Cursor       guifg=NONE      guibg=#97B8ED   gui=NONE    ctermfg=NONE    ctermbg=069 cterm=NONE
-hi CursorColumn guifg=NONE      guibg=#f2f2f2   gui=NONE    ctermfg=NONE    ctermbg=015 cterm=NONE
-hi CursorLine   guifg=NONE      guibg=#f2f2f2   gui=NONE    ctermfg=NONE    ctermbg=015 cterm=NONE 
-hi CursorLineNr guifg=#f2f2f2   guibg=#97B8ED   gui=NONE    ctermfg=015     ctermbg=069 cterm=bold
-hi FoldColumn   guifg=NONE      guibg=#f2f2f2   gui=NONE    ctermfg=NONE    ctermbg=015 cterm=NONE
-hi Folded       guifg=NONE      guibg=NONE      gui=italic  ctermfg=NONE    ctermbg=069 cterm=italic
-hi LineNr       guifg=NONE      guibg=NONE      gui=NONE    ctermfg=NONE    ctermbg=NONE cterm=NONE
+hi Normal           ctermbg=NONE    ctermfg=NONE    cterm=NONE      guibg=#E5E5E5 guifg=NONE gui=NONE
+hi ColorColumn      ctermbg=white   ctermfg=NONE    cterm=NONE      guibg=#f2f2f2 guifg=NONE gui=NONE
+hi Comment          ctermbg=NONE    ctermfg=NONE    cterm=italic    guibg=NONE guifg=#787878 gui=italic
+hi Conceal          ctermbg=NONE    ctermfg=NONE    cterm=NONE      guibg=NONE guifg=NONE gui=NONE
+hi Constant         ctermbg=NONE    ctermfg=NONE    cterm=bold      guibg=NONE guifg=NONE gui=bold
+hi Cursor           ctermbg=NONE    ctermfg=NONE    cterm=NONE      guibg=#97B8ED guifg=#f2f2f2 gui=NONE
+hi CursorColumn     ctermbg=NONE    ctermfg=NONE    cterm=NONE      guibg=#f2f2f2 guifg=NONE gui=NONE
+hi CursorLine       ctermbg=NONE    ctermfg=NONE    cterm=NONE      guibg=#f2f2f2 guifg=NONE gui=NONE
+hi CursorLineNr     ctermbg=NONE    ctermfg=NONE    cterm=NONE      guibg=#97B8ED guifg=#f2f2f2 gui=NONE
+hi DiffAdd          ctermbg=NONE    ctermfg=NONE    cterm=NONE      guibg=#A0B13E guifg=NONE gui=NONE
+hi DiffChange       ctermbg=NONE    ctermfg=NONE    cterm=NONE      guibg=#FEE95A guifg=NONE gui=NONE
+hi DiffDelete       ctermbg=NONE    ctermfg=NONE    cterm=NONE      guibg=#E93A2A guifg=NONE gui=NONE
+hi DiffText         ctermbg=NONE    ctermfg=NONE    cterm=NONE      guibg=NONE guifg=NONE gui=NONE
+hi Directory        ctermbg=NONE    ctermfg=NONE    cterm=bold      guibg=NONE guifg=NONE gui=bold
+hi Error            ctermbg=red     ctermfg=NONE    cterm=NONE      guibg=#EA4C40 guifg=NONE gui=reverse
+hi FoldColumn       ctermbg=NONE    ctermfg=NONE    cterm=NONE      guibg=NONE guifg=NONE gui=NONE
+hi Folded           ctermbg=NONE    ctermfg=NONE    cterm=NONE      guibg=NONE guifg=NONE gui=NONE
+hi Identifier       ctermbg=NONE    ctermfg=NONE    cterm=underline,bold guibg=NONE guifg=NONE gui=underline,bold
+hi Ignore           ctermbg=NONE    ctermfg=NONE    cterm=NONE      guibg=NONE guifg=NONE gui=NONE
+hi IncSearch        ctermbg=yellow  ctermfg=NONE    cterm=NONE      guibg=#FEE95A guifg=NONE gui=NONE
+hi LineNr           ctermbg=NONE    ctermfg=NONE    cterm=NONE      guibg=NONE guifg=#787878 gui=NONE
+hi MatchParen       ctermbg=yellow  ctermfg=NONE    cterm=NONE      guibg=#FEE95A  guifg=NONE gui=NONE
+hi ModeMsg          ctermbg=NONE    ctermfg=blue    cterm=NONE      guibg=NONE guifg=#97B8ED gui=NONE
+hi MoreMsg          ctermbg=NONE    ctermfg=NONE    cterm=NONE      guibg=NONE guifg=NONE gui=NONE
+hi NonText          ctermbg=NONE    ctermfg=NONE    cterm=NONE      guibg=NONE guifg=NONE gui=NONE
+hi Pmenu            ctermbg=NONE    ctermfg=NONE    cterm=NONE      guibg=#f2f2f2 guifg=#787878 gui=NONE
+hi PmenuSbar        ctermbg=NONE    ctermfg=NONE    cterm=NONE      guibg=NONE guifg=NONE gui=NONE
+hi PmenuSel         ctermbg=NONE    ctermfg=NONE    cterm=NONE      guibg=#97B8ED guifg=#f2f2f2 gui=NONE
+hi PmenuThumb       ctermbg=NONE    ctermfg=NONE    cterm=NONE      guibg=NONE guifg=NONE gui=NONE
+hi PreProc          ctermbg=NONE    ctermfg=NONE    cterm=NONE      guibg=NONE guifg=NONE gui=NONE
+hi Question         ctermbg=NONE    ctermfg=NONE    cterm=NONE      guibg=NONE guifg=NONE gui=NONE
+hi QuickFixLine     ctermbg=NONE    ctermfg=NONE    cterm=NONE      guibg=NONE guifg=NONE gui=NONE
+hi Search           ctermbg=yellow  ctermfg=NONE    cterm=NONE      guibg=#FEE95A guifg=NONE gui=NONE
+hi SignColumn       ctermbg=NONE    ctermfg=NONE    cterm=NONE      guibg=NONE guifg=NONE gui=NONE
+hi Special          ctermbg=NONE    ctermfg=NONE    cterm=italic    guibg=NONE guifg=NONE gui=italic
+hi SpecialKey       ctermbg=NONE    ctermfg=NONE    cterm=NONE      guibg=NONE guifg=NONE gui=NONE
+hi SpellBad         ctermbg=NONE    ctermfg=NONE    cterm=NONE      guibg=NONE guifg=#FA71B7 gui=NONE
+hi SpellCap         ctermbg=NONE    ctermfg=NONE    cterm=NONE      guibg=NONE guifg=NONE gui=NONE
+hi SpellLocal       ctermbg=NONE    ctermfg=NONE    cterm=NONE      guibg=NONE guifg=NONE gui=NONE 
+hi SpellRare        ctermbg=NONE    ctermfg=NONE    cterm=NONE      guibg=NONE guifg=NONE gui=NONE 
+hi Statement        ctermbg=NONE    ctermfg=NONE    cterm=bold      guibg=NONE guifg=NONE gui=bold
+hi StatusLine       ctermbg=darkblue ctermfg=white    cterm=NONE      guibg=#224970 guifg=#f2f2f2 gui=NONE
+hi StatusLineNC     ctermbg=darkblue ctermfg=white    cterm=underline guibg=#224970 guifg=#224970 gui=underline
+hi StatusLineTerm   ctermbg=NONE    ctermfg=NONE    cterm=NONE      guibg=NONE guifg=NONE gui=NONE
+hi StatusLineTermNC ctermbg=NONE    ctermfg=NONE    cterm=underline guibg=NONE guifg=NONE gui=underline
+hi TabLine          ctermbg=NONE    ctermfg=NONE    cterm=underline guibg=#A0B13E guifg=#787878  gui=underline
+hi TabLineFill      ctermbg=NONE    ctermfg=NONE    cterm=underline guibg=#A0B13E guifg=#787878  gui=underline
+hi TabLineSel       ctermbg=NONE    ctermfg=NONE    cterm=NONE   guibg=#FA71B7 guifg=#f2f2f2 gui=NONE
+hi Title            ctermbg=NONE    ctermfg=NONE    cterm=NONE      guibg=NONE guifg=NONE gui=NONE
+hi Todo             ctermbg=NONE    ctermfg=NONE    cterm=NONE      guibg=NONE guifg=#E93A2A gui=NONE
+hi ToolbarButton    ctermbg=NONE    ctermfg=NONE    cterm=NONE      guibg=NONE guifg=NONE gui=NONE
+hi ToolbarLine      ctermbg=NONE    ctermfg=NONE    cterm=NONE      guibg=NONE guifg=NONE gui=NONE
+hi Type             ctermbg=NONE    ctermfg=NONE    cterm=bold,italic guibg=NONE guifg=NONE gui=bold,italic
+hi Underlined       ctermbg=NONE    ctermfg=NONE    cterm=underline guibg=NONE guifg=NONE gui=underline
+hi VertSplit        ctermbg=NONE    ctermfg=NONE    cterm=NONE      guibg=NONE guifg=NONE gui=NONE
+hi Visual           ctermbg=blue    ctermfg=white   cterm=NONE      guibg=#97B8ED guifg=#f2f2f2 gui=NONE
+hi VisualNOS        ctermbg=NONE    ctermfg=NONE    cterm=NONE      guibg=NONE guifg=NONE gui=NONE
+hi WarningMsg       ctermbg=NONE    ctermfg=red     cterm=NONE      guibg=NONE guifg=#EA4C40 gui=NONE
+hi WildMenu         ctermbg=blue    ctermfg=white    cterm=NONE      guibg=#97B8ED guifg=#f2f2f2 gui=NONE
+hi debugBreakpoint  ctermbg=NONE    ctermfg=NONE    cterm=NONE      guibg=NONE guifg=NONE gui=NONE
+hi debugPC          ctermbg=NONE    ctermfg=NONE    cterm=NONE      guibg=NONE guifg=NONE gui=NONE
+hi helpLeadBlank    ctermbg=NONE    ctermfg=NONE    cterm=NONE      guibg=NONE guifg=NONE gui=NONE
+hi helpNormal       ctermbg=NONE    ctermfg=NONE    cterm=NONE      guibg=NONE guifg=NONE gui=NONE
 
-" Diff
-hi DiffAdd      guifg=NONE  guibg=#A0B13E   gui=NONE    ctermfg=NONE    ctermbg=106 cterm=NONE
-hi DiffChange   guifg=NONE  guibg=#FEE95A   gui=NONE    ctermfg=NONE    ctermbg=011 cterm=NONE
-hi DiffDelete   guifg=NONE  guibg=#E93A2A   gui=NONE    ctermfg=NONE    ctermbg=009 cterm=NONE
 
-" Search
-hi IncSearch    guifg=NONE  guibg=#FEE95A   gui=bold    ctermfg=NONE    ctermbg=011     cterm=bold
-hi MatchParen   guifg=NONE  guibg=#FEE95A   gui=bold    ctermfg=NONE    ctermbg=011     cterm=bold
-hi Search       guifg=NONE  guibg=#FEE95A   gui=bold    ctermfg=NONE    ctermbg=011     cterm=bold
-
-" Statusline and Menus
-hi ModeMsg      guifg=#000000   guibg=#E5E5E5   gui=bold    ctermfg=000     ctermbg=254     cterm=bold
-hi Pmenu        guifg=#787878   guibg=#f2f2f2   gui=NONE    ctermfg=243     ctermbg=015     cterm=NONE
-hi PmenuSel     guifg=#f2f2f2   guibg=#97B8ED   gui=NONE    ctermfg=015     ctermbg=069     cterm=bold
-hi StatusLine   guifg=#f2f2f2   guibg=#224970   gui=NONE    ctermfg=015     ctermbg=006     cterm=NONE
-hi StatusLineNC guifg=#224970   guibg=#224970   gui=NONE    ctermfg=006     ctermbg=006     cterm=NONE
-hi Tabline      guifg=#787878   guibg=#A0B13E   gui=NONE    ctermfg=243     ctermbg=106     cterm=NONE
-hi TablineSel   guifg=#f2f2f2   guibg=#FA71B7   gui=NONE    ctermfg=NONE    ctermbg=163     cterm=NONE
-hi VertSplit    guifg=#224970   guibg=NONE      gui=NONE    ctermfg=NONE    ctermbg=NONE    cterm=NONE
-hi Visual       guifg=#f2f2f2   guibg=#97B8ED   gui=NONE    ctermfg=015     ctermbg=069     cterm=NONE
-hi WildMenu     guifg=#f2f2f2   guibg=#97B8ED   gui=NONE    ctermfg=015     ctermbg=069     cterm=NONE
-
-" Errors
-hi Error    guifg=#A0B13E   guibg=NONE  gui=bold            ctermfg=106     ctermbg=NONE    cterm=bold
-hi SpellBad guifg=#FA71B7   guibg=NONE  gui=bold,underline  ctermfg=163     ctermbg=NONE    cterm=bold,underline
-hi Todo     guifg=#E93A2A   guibg=NONE  gui=bold            ctermfg=009     ctermbg=NONE    cterm=bold
-
-hi! link Constant Normal
-hi! link Identifier Normal
-hi! link PreProc Normal
-hi! link Type Normal
-hi! link Special Normal
-hi! link Statement Normal
-hi! link Underlined Normal
-hi! link Ignore Normal
-hi! link MoreMsg ModeMsg
-hi! link TablineFill Tabline
-hi! link PmenuSbar NonText
-hi! link PmenuThumb NonText
+hi link EndOfBuffer NonText
+hi link String      Normal
+hi link Number      Constant
+hi link ErrorMsg    Error
+hi link CursorIM    Cursor
+hi link Terminal    Normal

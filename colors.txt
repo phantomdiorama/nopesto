@@ -1,3 +1,5 @@
+// Colour list
+
 bob  = E5E5E5
 bob2 = 787878
 

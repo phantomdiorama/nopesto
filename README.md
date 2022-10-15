@@ -1,10 +1,16 @@
 ![header](header.png)
  
-A light, super minimal vim color scheme inspired by Bob's Burgers. With a focus on UI elements. Syntax, apart from comments and errors, is **uncoloured**.
+A light, super minimal vim color scheme inspired by Bob's Burgers. With a focus on UI elements. Now based on [bruin](https://git.sr.ht/~romainl/vim-bruin). 
 
 ## screenshots
 
+Ruby:
+
 ![screenshot](screenshot.png)
+
+Python:
+
+![screenshot2](screenshot2.png)
 
 ## usage
 
@@ -18,13 +24,9 @@ colorscheme nopesto
 
 - [ ] more Gene?
 
-## note
-
-Languages that use custom highlight groups, such as Markdown, may still use some colour. I may not fix this. 
-
 ## thanks
 
-- [off](https://github.com/pbrisbin/vim-colors-off) and [photon](https://github.com/axvr/photon.vim) for inspiration.
+- [bruin](https://git.sr.ht/~romainl/vim-bruin) for inspiration.
 - [tvdb](https://thetvdb.com/) for reference images.
 - [vim-css-color](https://github.com/ap/vim-css-color)
 - Loren Bouchard. Just in general.
