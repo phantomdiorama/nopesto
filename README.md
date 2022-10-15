@@ -17,6 +17,7 @@ Python:
 Install this colour scheme using your preferred method, then place the following line in your Vim configuration.
 
 ```vim
+set backgrounf=light
 colorscheme nopesto
 ```
 
